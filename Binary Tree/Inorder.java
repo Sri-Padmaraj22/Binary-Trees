@@ -1,5 +1,5 @@
 import java.util.*;
-public class Solution
+public class Inorder
 {
     public class TreeNode{
         TreeNode left,right;
