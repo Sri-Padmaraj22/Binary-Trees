@@ -54,8 +54,6 @@ public class VerticalTraversal {
                 res.get(res.size()-1).add(nodes.poll());
             }
         }
-
-
         return res;
         
     }
