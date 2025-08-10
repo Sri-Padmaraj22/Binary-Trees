@@ -4,7 +4,6 @@ public class BoundaryTraversal {
     public class TreeNode{
         TreeNode left,right;
         int val;
-
         TreeNode(int data)
         {
             this.val=data;

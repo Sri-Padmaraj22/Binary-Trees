@@ -1,0 +1,27 @@
+
+public class LowestCommonAncestor {
+    public class TreeNode{
+        TreeNode left,right;
+        int val;
+
+        TreeNode(int data)
+        {
+            this.val=data;
+        }
+    }
+
+    public TreeNode LCA(TreeNode root,TreeNode p,TreeNode q)
+    {
+        if(root==null|| root==p || root==q)
+        return root;
+        TreeNode left=LCA(root.left,p,q);
+        TreeNode right=LCA(root.right,p,q);
+
+        if(left==null)
+        return right;
+        else if(right==null)
+        return left;
+        else
+        return root;
+    }
+}
