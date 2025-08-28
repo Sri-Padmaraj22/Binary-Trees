@@ -29,7 +29,6 @@ public class Floor {
             else{
                 floor=root.val;
                 root=root.right;
-
             }
         }
     
