@@ -25,7 +25,6 @@ public class PreInTree {
         TreeNode root=new TreeNode(preorder[pstart]);
         int rootlevel=map.get(root.val);
         int numsleft=rootlevel-instart;
-
         root.left=buildTree(preorder,pstart+1,pstart+numsleft,inorder,instart,rootlevel-1,map);
         root.right=buildTree(preorder,pstart+numsleft+1,pend,inorder,rootlevel+1,inend,map);
         return root;
