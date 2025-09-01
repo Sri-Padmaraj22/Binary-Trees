@@ -1,7 +1,5 @@
 package BinarySearchTree;
-
 import java.util.Stack;
-
 public class BSTIterator {
     public class TreeNode{
         TreeNode left,right;
