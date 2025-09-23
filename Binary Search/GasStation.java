@@ -102,7 +102,7 @@ public class GasStation {
                 double numberInBetween=(arr[i+1]-arr[i])/mid;
                 if((arr[i+1]-arr[i]/mid)==numberInBetween*mid)
                 numberInBetween--;
-                c+(int))numberInBetween;
+                c+=(int)numberInBetween;
             }
             return c;
         }
