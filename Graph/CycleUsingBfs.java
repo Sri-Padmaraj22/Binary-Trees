@@ -39,9 +39,9 @@ public class CycleUsingBfs {
 
             for(int element: adj.get(node))
             {
-                if(vis[node]==false)
+                if(vis[element]==false)
                 {
-                    vis[node]=true;
+                    vis[element]=true;
                     q.add(new Pair(element,node));
                 }
                 else if(element!=parent)
