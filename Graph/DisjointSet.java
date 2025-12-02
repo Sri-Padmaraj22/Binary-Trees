@@ -1,3 +1,4 @@
+package Graph;
 import java.util.*;
 class DisjointSet{
     List<Integer> rank=new ArrayList<>();

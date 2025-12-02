@@ -1,8 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package Graph;
+import java.util.*;
 
 public class AccountsMerge {
      class DisjointSet{
@@ -77,6 +74,7 @@ public class AccountsMerge {
             }
         }
         List<List<String>> ans=new ArrayList<>();
+        @SuppressWarnings("unchecked")
         ArrayList<String> m[]=new ArrayList[n];
         for(int i=0;i<n;i++)
         m[i]=new ArrayList<>();

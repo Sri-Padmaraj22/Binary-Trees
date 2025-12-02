@@ -1,3 +1,4 @@
+package Graph;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -58,10 +59,10 @@ public class NumberOfIslandsII {
 
         public ArrayList<Integer> islands(int m,int n,int operators[][])
         {
-            ArrayList<Integer> arr=new ArrayList<>();
+            ArrayList<Integer> adj=new ArrayList<>();
             DisjointSet ds=new DisjointSet(m*n);
             int count=0;
-            int vis[][]=new int[][];
+            int vis[][]=new int[m][n];
             int len=operators.length;
             for(int i=0;i<len;i++)
             {
@@ -70,15 +71,15 @@ public class NumberOfIslandsII {
 
                 if(vis[row][col]==1)
                 {
-                    ans.add(count);
+                    adj.add(count);
                     continue;
                 }
                 vis[row][col]=1;
                 count++;
 
 
-                int delrow={-1,0,1,0};
-                int delcol={0,1,0,-1};
+                int delrow[]={-1,0,1,0};
+                int delcol[]={0,1,0,-1};
 
                 for(int j=0;j<4;j++)
                 {

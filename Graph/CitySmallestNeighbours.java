@@ -1,6 +1,4 @@
 package Graph;
-import java.util.*;
-
 public class CitySmallestNeighbours{
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         int count=0,city=-1,maxCount=n;
