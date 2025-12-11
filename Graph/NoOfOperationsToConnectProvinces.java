@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-
+package Graph;
+import java.util.*;
 public class NoOfOperationsToConnectProvinces {
    class DisjointSet{
     List<Integer> rank=new ArrayList<>();

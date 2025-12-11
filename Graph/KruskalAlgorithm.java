@@ -65,7 +65,7 @@ public class KruskalAlgorithm {
             }
             public boolean compareTo(Edge compare)
             {
-                return this.wt-compare.wt;
+                return this.wt-compare.wt<0;
             }
         }
 

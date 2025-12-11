@@ -1,7 +1,8 @@
+package Graph;
 import java.util.*;
 public class PrimsAlgorithm {
-    class Pair{
-        int node,int distance;
+    static class Pair{
+        int node;int distance;
 
         Pair(int distance,int node)
         {
